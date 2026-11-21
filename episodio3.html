@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episodio 3 - Dragon Ball Super Beerus</title>
+    <link rel="icon" type="image/jpg" href="imagenes/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <h1 class="logo"><a href="index.html">Dragon Ball Super: Beerus</a></h1>
+        <button id="btn-menu" aria-label="Abrir menú">☰</button>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="episodios.html" class="activo">Episodios</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenido">
+            <a href="episodios.html" class="volver">← Volver a episodios</a>
+
+            <h2>E3 - El Dios de la destrucción se dirige a la Tierra</h2>
+            <p class="fecha">Fecha de emisión: 25/10/2026</p>
+
+           
+            <img src="imagenes/cap3.jpg" alt="Episodio 3" class="imagen-episodio">
+
+            <h3>Descripción</h3>
+
+            <p>Tras enfrentarse a Goku, Beerus viaja a la Tierra en busca de otros saiyans.</p>
+
+         
+            <a href="https://youtu.be/JRdXaloClxY" target="_blank" class="boton">Ver ahora</a>
+        </section>
+
+        <section class="contenido">
+            <h2>Comentarios</h2>
+
+            <form id="form-comentario" data-episodio="3">
+                <label for="nombre-comentario">Nombre (opcional):</label>
+                <input type="text" id="nombre-comentario" maxlength="30">
+
+                <label for="texto-comentario">Tu comentario:</label>
+                <textarea id="texto-comentario" rows="4" required></textarea>
+
+                <button type="submit" class="boton">Publicar comentario</button>
+            </form>
+
+            <div id="lista-comentarios"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anio"></span>Fan page</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

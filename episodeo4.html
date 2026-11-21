@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episodio 4 - Dragon Ball Super Beerus</title>
+    <link rel="icon" type="image/jpeg" href="imagenes/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <h1 class="logo"><a href="index.html">Dragon Ball Super: Beerus</a></h1>
+        <button id="btn-menu" aria-label="Abrir menú">☰</button>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="episodios.html" class="activo">Episodios</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenido">
+            <a href="episodios.html" class="volver">← Volver a episodios</a>
+
+            <h2>E4 - El Dios de los Saiyans</h2>
+            <p class="fecha">Fecha de emisión: 1/11/2026</p>
+
+            <img src="imagenes/cap4.jpg" alt="Episodio 4" class="imagen-episodio">
+
+            <h3>Descripcion</h3>
+            <p>Por un motivo insignificante, Beerus decide destruir la Tierra.</p>
+
+            <a href="https://youtu.be/HSBAuwZpLYQ" target="_blank" class="boton">Ver ahora</a>
+        </section>
+
+        <section class="contenido">
+            <h2>Comentarios</h2>
+
+            <!-- data-episodio: debe ser distinto en cada página (1, 2, 3...) -->
+            <form id="form-comentario" data-episodio="4">
+                <label for="nombre-comentario">Nombre (opcional):</label>
+                <input type="text" id="nombre-comentario" maxlength="30">
+
+                <label for="texto-comentario">Tu comentario:</label>
+                <textarea id="texto-comentario" rows="4" required></textarea>
+
+                <button type="submit" class="boton">Publicar comentario</button>
+            </form>
+
+            <div id="lista-comentarios"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anio"></span> Fan page</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
